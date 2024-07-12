@@ -3,12 +3,14 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f4f4f4;
 }
 
 header {
-    background: #008080;
+    background: #001f3f;
     color: #fff;
     padding: 1rem 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -29,6 +31,12 @@ nav {
 .nav-links a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffdd57;
 }
 
 .hero {
@@ -36,15 +44,22 @@ nav {
     color: #fff;
     text-align: center;
     padding: 4rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero .btn {
-    background: #20b2aa;
+    background: #001f3f;
     color: #fff;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1rem;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background: #ffdd57;
+    color: #001f3f;
 }
 
 .container {
@@ -52,6 +67,8 @@ nav {
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .service, .product {
@@ -59,7 +76,7 @@ nav {
 }
 
 .service h3, .product h3 {
-    color: #008080;
+    color: #001f3f;
 }
 
 .service p, .product p {
@@ -67,11 +84,17 @@ nav {
 }
 
 .service .btn, .product .btn {
-    background: #008080;
+    background: #001f3f;
     color: #fff;
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.service .btn:hover, .product .btn:hover {
+    background: #ffdd57;
+    color: #001f3f;
 }
 
 form input,
@@ -81,20 +104,28 @@ form textarea {
     margin: 0.5rem 0;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 form button {
-    background: #008080;
+    background: #001f3f;
     color: #fff;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    background: #ffdd57;
+    color: #001f3f;
 }
 
 footer {
-    background: #008080;
+    background: #001f3f;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
