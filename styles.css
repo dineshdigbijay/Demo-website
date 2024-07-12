@@ -7,7 +7,7 @@ body {
     color: #f2f2f2;
 }
 .logo img {
-    max-height: 50px; /* Adjust height as needed */
+    max-height: 30px; /* Adjust height as needed */
     width: auto; /* Maintain aspect ratio */
 }
 header {
@@ -147,9 +147,9 @@ form textarea:focus {
 form button {
     background: #ff0000;
     color: #fff;
-    padding: 0.75rem 1.5rem;
+    padding: 1rem 1rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 6px;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -167,17 +167,12 @@ form button:hover {
     margin-top: 4rem;
 }
 .video-background {
-    position: relative; /* For positioning */
     width: 100%;
     height: 300px; /* Adjust height to your liking */
     overflow: hidden; /* Hide overflow */
 }
 
 .video-background video {
-    position: absolute; /* Position it absolutely */
-    top: 50%; /* Center it vertically */
-    left: 50%; /* Center it horizontally */
-    min-width: 100%; /* Ensure it covers the width */
     min-height: 100%; /* Ensure it covers the height */
     width: auto; /* Allow auto width for aspect ratio */
     height: auto; /* Allow auto height for aspect ratio */
