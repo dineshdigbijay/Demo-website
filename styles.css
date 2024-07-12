@@ -87,6 +87,8 @@ p {
 
 .service img, .product img {
     width: 100%;
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images cover the area without distortion */
     border-radius: 5px;
     margin-bottom: 1rem;
 }
@@ -116,8 +118,10 @@ p {
     background: #2e2e2e;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     display: inline-block;
-    width: 80%;
+    width: 100%; /* Ensure full width */
+    max-width: 600px; /* Limit max width */
     margin: auto;
+    box-sizing: border-box; /* Include padding in width */
 }
 
 form input,
@@ -128,7 +132,7 @@ form textarea {
     border: 1px solid #666;
     border-radius: 5px;
     background-color: #1c1c1c;
-    color:color: #f2f2f2;
+    color: #f2f2f2;
 }
 
 form input:focus,
@@ -149,6 +153,22 @@ form button {
 
 form button:hover {
     background: #e60000;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send video to back */
+    overflow: hidden;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire section */
 }
 
 .footer {
