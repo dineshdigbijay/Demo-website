@@ -118,8 +118,8 @@ p {
     background: #2e2e2e;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     display: inline-block;
-    width: 100%; /* Ensure full width */
-    max-width: 600px; /* Limit max width */
+    width: 150%; /* Ensure full width */
+    max-width: 800px; /* Limit max width */
     margin: auto;
     box-sizing: border-box; /* Include padding in width */
 }
