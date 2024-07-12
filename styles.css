@@ -6,12 +6,6 @@ body {
     background-color: #1c1c1c;
     color: #f2f2f2;
 }
-.logo img {
-    max-height: 70px; /* Adjust height as needed */
-    width: auto; /* Maintain aspect ratio */
-    
-}
-
 
 header {
     background: #000;
@@ -124,7 +118,7 @@ p {
     background: #2e2e2e;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     display: inline-block;
-    width: 110%; /* Ensure full width */
+    width: 100%; /* Ensure full width */
     max-width: 600px; /* Limit max width */
     margin: auto;
     box-sizing: border-box; /* Include padding in width */
@@ -161,25 +155,26 @@ form button:hover {
     background: #e60000;
 }
 
-.video-container {
-    width: 80%; /* Set the width of the video container */
-    max-width: 800px; /* Limit maximum width */
-    margin: 0 auto; /* Center the video */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send video to back */
+    overflow: hidden;
 }
 
-.video-container video {
-    width: 100%; /* Make video responsive */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 5px; /* Optional rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow */
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire section */
 }
-
-
 
 .footer {
     background: #000;
     color: #f2f2f2;
-    text-align: mid-center;
-    padding: 5rem 0;
+    text-align: center;
+    padding: 1rem 0;
     margin-top: 4rem;
 }
