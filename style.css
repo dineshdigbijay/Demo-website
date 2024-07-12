@@ -3,14 +3,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f4;
 }
 
 header {
     background: #001f3f;
     color: #fff;
     padding: 1rem 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav {
@@ -31,35 +30,23 @@ nav {
 .nav-links a {
     color: #fff;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ffdd57;
 }
 
 .hero {
-    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
+    background: url('images/hero.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 4rem 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .hero .btn {
-    background: #001f3f;
+    background: #0074D9;
     color: #fff;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1rem;
-    transition: background 0.3s;
-}
-
-.hero .btn:hover {
-    background: #ffdd57;
-    color: #001f3f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -67,16 +54,26 @@ nav {
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about, .services, .products, .contact {
+    margin: 2rem 0;
+}
+
+.about h3, .services h3, .products h3, .contact h3 {
+    color: #001f3f;
+}
+
+.about p, .services p, .products p, .contact p {
+    color: #555;
 }
 
 .service, .product {
     margin: 2rem 0;
 }
 
-.service h3, .product h3 {
-    color: #001f3f;
+.service h4, .product h4 {
+    color: #0074D9;
 }
 
 .service p, .product p {
@@ -89,12 +86,7 @@ nav {
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.service .btn:hover, .product .btn:hover {
-    background: #ffdd57;
-    color: #001f3f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 form input,
@@ -104,7 +96,6 @@ form textarea {
     margin: 0.5rem 0;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 form button {
@@ -114,12 +105,6 @@ form button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s;
-}
-
-form button:hover {
-    background: #ffdd57;
-    color: #001f3f;
 }
 
 footer {
@@ -127,5 +112,4 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
