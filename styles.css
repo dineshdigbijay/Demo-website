@@ -6,7 +6,11 @@ body {
     background-color: #1c1c1c;
     color: #f2f2f2;
 }
-
+.logo img {
+    max-height: 70px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    text-align: center;
+}
 header {
     background: #000;
     color: #ff0000;
