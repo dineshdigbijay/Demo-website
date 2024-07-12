@@ -6,6 +6,12 @@ body {
     background-color: #1c1c1c;
     color: #f2f2f2;
 }
+.logo img {
+    max-height: 70px; /* Adjust height as needed */
+    width: auto; /* Maintain aspect ratio */
+    
+}
+
 
 header {
     background: #000;
@@ -34,39 +40,30 @@ nav {
     text-decoration: none;
 }
 
-.services {
+.hero {
+    background: url('images/explore.jpg') no-repeat center center/cover;
+    color: #fff;
     text-align: center;
-    padding: 2rem 0;
+    padding: 6rem 2rem;
 }
 
-.video-container {
-    width: 80%; /* Set the width of the video container */
-    max-width: 600px; /* Reduce maximum width */
-    margin: 0 auto; /* Center the video */
-}
-
-.video-container video {
-    width: 100%; /* Make video responsive */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.explore-button {
-    display: inline-block;
+.hero .btn {
     background: #ff0000;
     color: #fff;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
-    margin: 1rem auto; /* Centering the button */
+    margin-top: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    text-align: center; /* Center text */
 }
 
-.explore-button:hover {
-    background: #e60000; /* Darker shade on hover */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.about {
+section {
     margin: 4rem 0;
     text-align: center;
 }
@@ -79,14 +76,14 @@ p {
     color: #b3b3b3;
 }
 
-.service-grid {
+.service-grid, .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
 
-.service {
+.service, .product {
     padding: 1rem;
     border: 1px solid #444;
     border-radius: 5px;
@@ -94,27 +91,95 @@ p {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.service img {
+.service img, .product img {
     width: 100%;
-    height: 150px; /* Set a fixed height for uniformity */
-    object-fit: cover; /* Maintain aspect ratio */
+    height: 150px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures images cover the area without distortion */
     border-radius: 5px;
     margin-bottom: 1rem;
 }
 
-.service h3 {
+.service h3, .product h3 {
     color: #ff0000;
     margin-bottom: 1rem;
 }
 
-.service p {
+.service p, .product p {
     color: #b3b3b3;
 }
 
-footer {
+.service .btn, .product .btn {
+    background: #ff0000;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact-box {
+    padding: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #2e2e2e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 110%; /* Ensure full width */
+    max-width: 600px; /* Limit max width */
+    margin: auto;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #666;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    color: #f2f2f2;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #ff0000;
+}
+
+form button {
+    background: #ff0000;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+form button:hover {
+    background: #e60000;
+}
+
+.video-container {
+    width: 80%; /* Set the width of the video container */
+    max-width: 800px; /* Limit maximum width */
+    margin: 0 auto; /* Center the video */
+}
+
+.video-container video {
+    width: 100%; /* Make video responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow */
+}
+
+
+
+.footer {
     background: #000;
     color: #f2f2f2;
-    text-align: center;
-    padding: 1rem 0;
+    text-align: mid-center;
+    padding: 5rem 0;
     margin-top: 4rem;
 }
