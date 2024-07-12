@@ -3,13 +3,15 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #1c1c1c;
+    color: #f2f2f2;
 }
 
 header {
-    background: #001f3f;
-    color: #fff;
+    background: #000;
+    color: #ff0000;
     padding: 1rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 nav {
@@ -28,25 +30,25 @@ nav {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #ff0000;
     text-decoration: none;
 }
 
 .hero {
-    background: url('images/hero.jpg') no-repeat center center/cover;
+    background: url('images/explore.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 6rem 2rem;
 }
 
 .hero .btn {
-    background: #0074D9;
+    background: #ff0000;
     color: #fff;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -61,11 +63,11 @@ section {
 }
 
 h2 {
-    color: #001f3f;
+    color: #ff0000;
 }
 
 p {
-    color: #555;
+    color: #b3b3b3;
 }
 
 .service-grid, .product-grid {
@@ -77,10 +79,10 @@ p {
 
 .service, .product {
     padding: 1rem;
-    border: 1px solid #ddd;
+    border: 1px solid #444;
     border-radius: 5px;
-    background: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: #2e2e2e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .service img, .product img {
@@ -90,21 +92,32 @@ p {
 }
 
 .service h3, .product h3 {
-    color: #0074D9;
+    color: #ff0000;
     margin-bottom: 1rem;
 }
 
 .service p, .product p {
-    color: #555;
+    color: #b3b3b3;
 }
 
 .service .btn, .product .btn {
-    background: #001f3f;
+    background: #ff0000;
     color: #fff;
     padding: 0.5rem 1rem;
     text-decoration: none;
     border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.contact-box {
+    padding: 1rem;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background: #2e2e2e;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 80%;
+    margin: auto;
 }
 
 form input,
@@ -112,22 +125,36 @@ form textarea {
     width: 100%;
     padding: 0.75rem;
     margin: 0.5rem 0;
-    border: 1px solid #ccc;
+    border: 1px solid #666;
     border-radius: 5px;
+    background-color: #1c1c1c;
+    color:color: #f2f2f2;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #ff0000;
 }
 
 form button {
-    background: #001f3f;
+    background: #ff0000;
     color: #fff;
     padding: 0.75rem 1.5rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-footer {
-    background: #001f3f;
-    color: #fff;
+form button:hover {
+    background: #e60000;
+}
+
+.footer {
+    background: #000;
+    color: #f2f2f2;
     text-align: center;
     padding: 1rem 0;
+    margin-top: 4rem;
 }
