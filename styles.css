@@ -163,16 +163,25 @@ form button:hover {
     padding: 1rem 0;
     margin-top: 4rem;
 }
-.video-container {
-    width: 80%; /* Set the width of the video container */
-    max-width: 600px; /* Reduce maximum width */
-    margin: 0 auto; /* Center the video */
+.video-background {
+    position: relative; /* For positioning */
+    width: 100%;
+    height: 300px; /* Adjust height to your liking */
+    overflow: hidden; /* Hide overflow */
 }
 
-.video-container video {
-    width: 100%; /* Make video responsive */
-    height: auto; /* Maintain aspect ratio */
+.video-background video {
+    position: absolute; /* Position it absolutely */
+    top: 50%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    min-width: 100%; /* Ensure it covers the width */
+    min-height: 100%; /* Ensure it covers the height */
+    width: auto; /* Allow auto width for aspect ratio */
+    height: auto; /* Allow auto height for aspect ratio */
+    transform: translate(-50%, -50%); /* Centering */
+    z-index: -1; /* Send it to the back */
 }
+
 
 .explore-button {
     display: inline-block;
