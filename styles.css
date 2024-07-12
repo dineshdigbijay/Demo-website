@@ -162,19 +162,18 @@ form button:hover {
 }
 
 .video-container {
-    width: 80%; /* Set width of the video box */
-    max-width: 800px; /* Limit max width */
-    margin: 0 auto; /* Center the box */
-    overflow: hidden; /* Hide overflow */
-    border: 1px solid #444; /* Optional border for visual */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow */
+    width: 80%; /* Set the width of the video container */
+    max-width: 800px; /* Limit maximum width */
+    margin: 0 auto; /* Center the video */
 }
 
 .video-container video {
     width: 100%; /* Make video responsive */
     height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow */
 }
+
 
 
 .footer {
