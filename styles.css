@@ -52,7 +52,26 @@ nav {
     color: #fff;
     text-align: center;
     padding: 2rem;
-    background: url('images/explore.jpg') no-repeat center center/cover;
+}
+
+.hero .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send video to back */
+    overflow: hidden;
+}
+
+.hero .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire section */
+}
+
+.hero .hero-content {
+    z-index: 1; /* Bring text content to the front */
 }
 
 .hero .btn {
@@ -69,11 +88,20 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
+    padding-top: 6rem; /* Ensure content doesn't hide behind the fixed header */
 }
 
-section {
-    margin: 4rem 0;
+.section {
+    padding: 4rem 0;
     text-align: center;
+}
+
+.section:nth-child(odd) {
+    background: #222;
+}
+
+.section:nth-child(even) {
+    background: #1c1c1c;
 }
 
 h2 {
@@ -135,7 +163,7 @@ p {
     width: 100%;
     max-width: 800px;
     margin: auto;
-    box-sizing: border-box; /* Include padding in width */
+    box-sizing: border-box;
 }
 
 form input,
@@ -169,83 +197,10 @@ form button:hover {
     background: #e60000;
 }
 
-.footer {
+footer {
     background: #000;
     color: #f2f2f2;
     text-align: center;
     padding: 1rem 0;
     margin-top: 4rem;
-}
-
-.video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; /* Send video to back */
-    overflow: hidden;
-}
-
-.video-background video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Cover the entire section */
-}
-
-/* New styles for dynamic header and proper sections division */
-header.scrolled {
-    background: rgba(0, 0, 0, 0.9);
-    transition: background 0.3s;
-}
-
-.section {
-    padding: 4rem 0;
-    position: relative;
-}
-
-.section:nth-child(odd) {
-    background: #222;
-}
-
-.section:nth-child(even) {
-    background: #1c1c1c;
-}
-
-/* Ensure hero section is full screen */
-.hero {
-    min-height: 100vh;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background: #000;
-        padding: 1rem 2rem;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-links a {
-        padding: 1rem 0;
-    }
-
-    .hero {
-        padding: 4rem 1rem;
-    }
-
-    .service-grid, .product-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .logo img {
-        max-height: 40px;
-    }
 }
