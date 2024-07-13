@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arba Solution</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <nav>
-            
-             <img src="arbalogo.png" alt="Arba Solution Logo" />
+            <div class="logo">
+                <img src="arbalogo.png" alt="Arba Solution Logo" />
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -21,12 +23,13 @@
         </nav>
     </header>
     <section class="hero" id="home">
+        <div class="video-background">
+            <video autoplay muted loop>
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
         <div class="hero-content">
-            <div class="video-background">
-                <video autoplay muted loop>
-                    <source src="video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
             <h1>Innovative IT Solutions for Your Business</h1>
             <a href="#services" class="btn">Explore Our Services</a>
         </div>
@@ -37,8 +40,6 @@
             <p>Arba Solution is a leading IT company specializing in software development, cybersecurity, cloud services, and IT consulting. We help businesses achieve their goals and drive innovation in their industries.</p>
         </section>
         <section class="services" id="services">
-            
-            </div>
             <h2>Our Services</h2>
             <div class="service-grid">
                 <div class="service">
