@@ -34,3 +34,42 @@ form.addEventListener('submit', function(e) {
         alert('Please fill out all fields.');
     }
 });
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector("header");
+    const navLinks = document.querySelector(".nav-links");
+    const menuToggle = document.createElement("div");
+
+    menuToggle.innerHTML = "&#9776;";
+    menuToggle.style.fontSize = "2rem";
+    menuToggle.style.cursor = "pointer";
+    menuToggle.style.color = "#ff0000";
+    menuToggle.style.display = "none";
+    header.querySelector("nav").prepend(menuToggle);
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+
+    menuToggle.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+    });
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+            navLinks.classList.remove("active");
+            menuToggle.style.display = "none";
+        } else {
+            menuToggle.style.display = "block";
+        }
+    });
+
+    if (window.innerWidth <= 768) {
+        menuToggle.style.display = "block";
+    }
+});
+</script>
